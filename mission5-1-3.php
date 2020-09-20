@@ -58,7 +58,7 @@ if(isset($_POST["editsubmit"])){
 <input type="text" name="name" placeholder="名前入力" value=<?php if(isset($newname)){echo $newname;}?>> 
 <input type="text" name="comment" placeholder="コメント入力" value=<?php if(isset($newcomment)){echo $newcomment;}?>>
 <input type="text" name="password" placeholder="新規パスワード設定"> 
-<input type="text" name="edit" value=<?php if(isset($newnumber)){echo $newnumber;}?>><!--隠し目印-->
+<input type="hidden" name="edit" value=<?php if(isset($newnumber)){echo $newnumber;}?>><!--隠し目印-->
 <input type="submit" name="submit"value="送信">
 <h2><p>削除フォーム</p></h2>
 <input type="number" name="delatenumber" placeholder="削除番号入力">
